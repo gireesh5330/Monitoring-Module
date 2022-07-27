@@ -25,10 +25,10 @@ variable "documentation" {
   description = "(Optional) Documentation that is included with notifications and incidents related to this policy. Best practice is for the documentation to include information to help responders understand, mitigate, escalate, and correct the underlying problems detected by the alerting policy. Notification channels that have limited capacity might not show this documentation."
 }
 
-variable "notification_channels" {
+/* variable "notification_channels" {
   type        = list(string)
   description = "(Optional) Identifies the notification channels to which notifications should be sent when incidents are opened or closed or when new violations occur on an already opened incident. Each element of this array corresponds to the name field in each of the NotificationChannel objects that are returned from the notificationChannels.list method. The syntax of the entries in this field is projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID]"
-}
+} */
 
 variable "conditions" {
   type = map(map(any))
