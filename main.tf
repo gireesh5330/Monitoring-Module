@@ -2,7 +2,7 @@ resource "google_monitoring_alert_policy" "alert_policy" {
   display_name          = var.display_name
   project               = var.project_id
   combiner              = var.combiner
-  notification_channels = var.notification_channels
+  # notification_channels = var.notification_channels
   user_labels           = var.user_labels
   enabled               = var.enabled
   dynamic "documentation" {
