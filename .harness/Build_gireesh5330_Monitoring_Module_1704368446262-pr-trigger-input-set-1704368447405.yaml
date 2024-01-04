@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_gireesh5330_Monitoring_Module_1704368446262-pr-trigger-input-set
+  identifier: Build_gireesh5330_Monitoring_Module_1704368446262prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_gireesh5330_Monitoring_Module_1704368446262
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
